@@ -2,31 +2,8 @@
   "version": 2,
   "name": "heysola",
   "public": true,
+  "buildCommand": "",
+  "outputDirectory": ".",
   "cleanUrls": true,
-  "trailingSlash": false,
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/blog/:path*",
-      "destination": "/blog/:path*"
-    }
-  ]
+  "trailingSlash": false
 }
