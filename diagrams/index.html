@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy Diagrams | Sola Ray</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 50px;
+        }
+        .diagram-grid {
+            display: grid;
+            gap: 20px;
+        }
+        .diagram-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 30px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s;
+        }
+        .diagram-card:hover {
+            background: rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+            transform: translateY(-4px);
+        }
+        .diagram-emoji {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .diagram-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .diagram-desc {
+            color: #888;
+            line-height: 1.6;
+        }
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 15px;
+        }
+        .coming-soon {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .coming-soon .badge {
+            background: #666;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #666;
+        }
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Strategy Diagrams</h1>
+        <p class="subtitle">Visual guides for projects and launches</p>
+        
+        <div class="diagram-grid">
+            <a href="brain-v1-launch.html" class="diagram-card">
+                <div class="diagram-emoji">🧠</div>
+                <div class="diagram-title">Product Launch Strategy</div>
+                <p class="diagram-desc">19-week roadmap for launching a new supplement product. Timeline, phases, key decisions, and metrics.</p>
+                <span class="badge">Live</span>
+            </a>
+            
+            <div class="diagram-card coming-soon">
+                <div class="diagram-emoji">📈</div>
+                <div class="diagram-title">E-commerce Metrics Dashboard</div>
+                <p class="diagram-desc">Real-time business metrics, sales tracking, and performance indicators.</p>
+                <span class="badge">Coming Soon</span>
+            </div>
+            
+            <div class="diagram-card coming-soon">
+                <div class="diagram-emoji">🎯</div>
+                <div class="diagram-title">Content Strategy Map</div>
+                <p class="diagram-desc">Content pillars, posting schedule, and platform strategy visualization.</p>
+                <span class="badge">Coming Soon</span>
+            </div>
+            
+            <div class="diagram-card coming-soon">
+                <div class="diagram-emoji">🗺️</div>
+                <div class="diagram-title">Product Roadmap</div>
+                <p class="diagram-desc">Q1-Q4 product launches, seasonal planning, and opportunity mapping.</p>
+                <span class="badge">Coming Soon</span>
+            </div>
+        </div>
+        
+        <p class="footer">
+            Built by <a href="/">Sola Ray ☀️</a> | Visual strategy tools
+        </p>
+    </div>
+</body>
+</html>
